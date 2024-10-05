@@ -13,7 +13,7 @@ const Home = () => {
     let chunk = file.slice(start, end);
     let formData = new FormData();
     formData.append("file", chunk, file.name);
-    return await fetch("http://localhost:3000/upload", {
+    return await fetch("http://158.101.194.135:3000/upload", {
       method: "POST",
       body: formData,
     });
@@ -35,7 +35,7 @@ const Home = () => {
   }
 
   async function downloadFile() {
-    return await fetch(`http://localhost:3000/download/${file.name}`, {
+    return await fetch(`http://158.101.194.135:3000/download/${file.name}`, {
       method: "GET",
     });
   }
