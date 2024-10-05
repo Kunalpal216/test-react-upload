@@ -48,7 +48,7 @@ const Home = () => {
         <button type="submit">Upload</button>
       </form>
       {file ? (
-        <a href={`http://localhost:3000/download/${file.name}`}>
+        <a href={`http://158.101.194.135:3000/download/${file.name}`}>
           <button>Click to Download</button>
         </a>
       ) : null}
