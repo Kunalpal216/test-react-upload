@@ -22,7 +22,8 @@ const Home = () => {
   async function handleSubmit(event) {
     event.preventDefault();
     console.log(file, typeof file);
-    const chunkSize = 1024 * 100;
+    const chunkSize = 1024 * 1024;
+    console.log(chunkSize);
     if (file) {
       const totalChunks = Math.ceil(file.size / chunkSize);
 
